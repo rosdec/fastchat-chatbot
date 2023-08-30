@@ -29,7 +29,7 @@
         }
 
         textarea {
-            width: 100%;
+            width: 95%;
             height: 100px;
             padding: 10px;
             border: 1px solid #ccc;
@@ -108,7 +108,7 @@
                 });
 
                 const data = await response.json();
-                responseText.textContent += "\n" + data.choices[0].text;
+                responseText.textContent = data.choices[0].text;
             } catch (error) {
                 responseText.textContent = 'An error occurred. Please try again.';
             }
